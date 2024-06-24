@@ -1,0 +1,407 @@
+*{
+    position: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "firaCode";
+    src: url(/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "manrope";
+    src: url(/fonts/Manrope/Manrope-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: manrope;
+    min-height: 300;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+header {grid-area:header;}
+main {
+    grid-area:main;
+    
+    width: 100%;
+    min-height: 300px;
+}
+footer {
+    grid-area:footer;
+    
+    background-color: #3A3A3A;
+    width: 100%;
+    min-height: 200px;
+}
+.dropdown_footer{
+    display: none;
+}
+#name768{
+    display: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.toothAppear{
+    background-image: url(/images/toothAppears.png);
+    background-size: cover;
+
+    cursor: pointer;
+    width: 130px;
+    height: 110px;
+}
+
+#modalWindow{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #ffbdc0b6;
+    z-index: 999;
+    display: none;
+    font-family: Manrope;
+
+    animation: appersModal 0.7s ease;
+}
+@keyframes appersModal {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.modalButtons{
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+    display: flex;
+}
+#closeModal{
+    background-image: url(/images/closeModal.png);
+    width: 50px;
+    height: 50px;
+    top: 3%;
+    left: 95%;
+    position: absolute;
+}
+#regPhp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    isolation: isolate;
+    cursor: pointer;
+
+    margin-left: 30px;
+    width: 315px;
+    height: 80px;
+    border-radius:20px;
+    border: 5px solid #FFA8AD;
+    background-color: white;
+
+    color: #FFA8AD;
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 700;
+
+    overflow: hidden;
+}
+#regPhp > span {
+    z-index: -1;
+    position: absolute;
+    width: 33.333%;
+    height: 100%;
+    opacity: 0.5;
+
+    background-color: transparent;
+}
+#regPhp > :first-child{
+    left: 0;
+    top: 0;
+}
+#regPhp > :last-child{
+    right: 0;
+    top: 0;
+}
+#regPhp::before{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    background: #FFA8AD;
+    width: 10%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    inset: 0;
+    margin: auto;
+    opacity: 0;
+    transition: transform 1s 200ms, opacity 200ms;
+}
+@keyframes FillTextReview {
+    from {color: #FFA8AD;}
+    to {color: #FFFFFF;}
+}
+#regPhp:hover{
+    animation: FillTextReview 0.3s forwards;
+}
+#regPhp:hover::before{
+    transform: scale(20);
+    opacity: 1;
+    transition: transform 1.5s , opacity 0.5s;
+}
+#regPhp:has(:first-child:hover)::before{
+    margin-left: 0;
+}
+#regPhp:has(:last-child:hover)::before{
+    margin-right: 0;
+}
+#regPhp:has(:last-child:hover)::before,
+#regPhp:has(:first-child:hover)::before{
+    transition: transform 1s, opacity 0.25s;
+}
+
+#avtorPhp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    isolation: isolate;
+    cursor: pointer;
+
+    margin-left: 30px;
+    width: 315px;
+    height: 80px;
+    border-radius:20px;
+    border: 5px solid #FFA8AD;
+    background-color: white;
+
+    color: #FFA8AD;
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 700;
+
+    overflow: hidden;
+}
+
+#avtorPhp > span {
+    z-index: -1;
+    position: absolute;
+    width: 33.333%;
+    height: 100%;
+    opacity: 0.5;
+
+    background-color: transparent;
+}
+#avtorPhp > :first-child{
+    left: 0;
+    top: 0;
+}
+#avtorPhp > :last-child{
+    right: 0;
+    top: 0;
+}
+#avtorPhp::before{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    background: #FFA8AD;
+    width: 10%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    inset: 0;
+    margin: auto;
+    opacity: 0;
+    transition: transform 1s 200ms, opacity 200ms;
+}
+@keyframes FillTextReview {
+    from {color: #FFA8AD;}
+    to {color: #FFFFFF;}
+}
+#avtorPhp:hover{
+    animation: FillTextReview 0.3s forwards;
+}
+#avtorPhp:hover::before{
+    transform: scale(20);
+    opacity: 1;
+    transition: transform 1.5s , opacity 0.5s;
+}
+#avtorPhp:has(:first-child:hover)::before{
+    margin-left: 0;
+}
+#avtorPhp:has(:last-child:hover)::before{
+    margin-right: 0;
+}
+#avtorPhp:has(:last-child:hover)::before,
+#avtorPhp:has(:first-child:hover)::before{
+    transition: transform 1s, opacity 0.25s;
+}
+
+.avtorizacia{
+    top: 25%;
+    left: 40%;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    display: none;
+    flex-direction: column;
+
+    background-color: white;
+    border: 5px solid #FFA8AD;
+    border-radius: 20px;
+}
+.registracia{
+    top: 16%;
+    left: 40%;
+    position: absolute;
+    width: 400px;
+    height: 700px;
+    display: none;
+    flex-direction: column;
+
+    background-color: white;
+    border: 5px solid #FFA8AD;
+    border-radius: 20px;
+}
+.closeForm{
+    position: absolute;
+    top: 1%;
+    left: 87%;
+    cursor: pointer;
+
+    background-image: url(/images/closeForm.png);
+    width: 50px;
+    height: 50px;
+}
+
+.registracia input{
+    border-radius: 20px;
+    width: 300px;
+    height: 45px;
+    margin: 10px auto;
+    border-color: #FFA8AD;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 21px;
+}
+
+.registracia input::placeholder{
+    padding: 5px;
+}
+
+.avtorizacia input{
+    border-radius: 20px;
+    width: 300px;
+    height: 45px;
+    margin: 10px auto;
+    border-color: #FFA8AD;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 21px;
+}
+#login_avtor{
+    margin-top: 50px;
+}
+.avtorizacia input::placeholder{
+    padding: 10px;
+}
+#login{
+    margin-top: 60px;
+}
+#submit{
+    height: 55px;
+    width: 320px;
+    margin: 10px auto;
+    background-color: #FFA8AD;
+    color: white;
+    font-family: Firacode;
+    font-weight: 900;
+    transition: background-color 0.9s ease;
+}
+#submit:hover{
+    background-color: rgb(253, 196, 196);
+}
+#submit_avtor{
+    height: 55px;
+    width: 320px;
+    margin: 10px auto;
+    background-color: #FFA8AD;
+    color: white;
+    font-family: Firacode;
+    font-weight: 900;
+    transition: background-color 0.9s ease;
+}
+#submit_avtor:hover{
+    background-color: rgb(253, 196, 196);
+}
+.message{
+    color: green;
+    position:  relative;
+    font-size: 14px;
+}
+#loginAvailability{
+    position: absolute;
+    top: 102px;
+    left: 50px;
+}
+#passwordAvailability{
+    position: absolute;
+    top: 180px;
+    left: 50px;
+}
+#usernameAvailability{
+    position: absolute;
+    top: 110px;
+    left: 50px;
+}
+#emailAvailability{
+    position: absolute;
+    top: 585px;
+    left: 50px;
+}
+#dialogWindow{
+    margin-top: 150px;
+    width: 350px;
+    height: 140px;
+    border: 5px solid #FFA8AD;
+    background-color: #FFA8AD;
+    border-radius: 20px;
+    color: white;
+    font-size: 28px;
+    font-family: firaCode;
+    font-weight: 900;
+    filter: drop-shadow(3px 4px 10px #FFA8AD);
+
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    position: absolute;
+    left: 35%;
+}
+#modalDialogWindow{
+    margin-top: 150px;
+    width: 350px;
+    height: 140px;
+    border: 5px solid #FFA8AD;
+    background-color: #FFA8AD;
+    border-radius: 20px;
+    color: white;
+    font-size: 28px;
+    font-family: firaCode;
+    font-weight: 900;
+    filter: drop-shadow(3px 4px 10px #FFA8AD);
+
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    position: absolute;
+    left: 40%;
+}

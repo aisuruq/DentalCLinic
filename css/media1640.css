@@ -1,0 +1,204 @@
+@media (max-width: 1640px) {
+    header{
+        width: 1640px;
+    }
+    .header_menu{
+        margin-left: 50px;
+        width: 1560px;
+        display: grid;
+        grid-template: 1fr / 200px 50px 3fr 45px 1fr 45px 1fr;
+    }
+    .login_header{
+        width: 150px;
+    }
+
+    #main_page{
+        width: 1640px;
+    }
+    .mainPage{
+        border-radius: 0px;
+        width: 1640px;
+        height: 660px;
+        margin: 0 auto;
+    }
+    .main_page_text{
+        margin-top: -120px;
+        margin-left: 70px;
+        
+        width: 675px;
+        height: 400px;
+    }
+    #tooth{
+        width: 75px;
+        height: 77px;
+    
+        top: 270px;
+        left: -740px;
+    }
+
+
+
+    #clinic_services{
+        width: 1640px;
+    }
+    .clinicSevices{
+        margin-left: 70px;
+        width: 1580px;
+        height: 400px;
+    }
+    .clinic_services_blocks{
+        width: 1485px;
+    }
+    .clinic_services_block{
+        width: 360px;
+    }
+    .arrowService{
+        margin-left: 290px;
+    }
+
+    #aboutUs{
+        width: 1640px;
+    }
+    .about__us{
+        width: 1640px;
+    }
+    .about__us h2{
+        margin-left: 70px;
+    }
+
+    .text_aboutUs{
+        width: 1500px;
+    }
+    .content_img{
+        width: 1500px;
+
+        grid-template: 200px 30px 200px / 300px 30px 420px 30px 690px;
+        grid-template-areas: 
+        "dentalroom  familyclinic girlabout"
+        "dentalroom  decoration girlabout";
+    }
+    #familyClinic{
+        width: 420px;
+    }
+    #Decoration{
+        width: 420px;
+    }
+    #GirlAbout{
+        width: 690px;
+    }
+
+    .container_quality{
+        width: 1440px;
+        margin-left: 70px;
+    }
+    .quality{
+        width: 460px;
+        height: 200px;
+    }
+
+
+    #doctors{
+        width: 1640px;
+    }
+    .doctors_mainBlock{
+        width: 1640px;
+    }
+    .doctors_mainBlock h2{
+        margin-left: 70px; 
+    }
+    .container_doctors{
+        width: 1470px;
+    }
+    .doctors_mainBlock h3{
+        width: 420px;
+    }
+    .doctors_block_textBack{
+        width: 420px;
+    }
+    .doctors_mainBlock img{
+        width: 420px;
+    }
+    .doctors_block{
+        width: 420px;
+    }
+    .doctors_mainBlock p{
+        font-size: 20px;
+    }
+    
+    #doctorArrowLeft{
+        width: 55px;
+        height: 50px;
+    }
+    #doctorArrowRight{
+        width: 55px;
+        height: 50px;
+    }
+
+
+    #form_signup{
+        width: 1640px;
+    }
+    .formSignup{
+        width: 1500px;
+        height: 400px;
+    }
+
+
+    #comments{
+        width: 1640px;
+    }
+    .comments{
+        width: 1640px;
+    }
+    .comments h2{
+        margin-left: 70px;
+    }
+    .container_comments{
+        min-width: 1500px;
+    }
+    .comments_block{
+        width: 740px;
+    }
+    #commentsLike{
+        left: 210px;
+    }
+
+    #footer{
+        width: 1640px;
+    }
+    footer{
+        width: 1640px;
+    }
+    .footer_logo {
+        margin-left: 70px;
+    }
+    .footer_menu {
+        margin-left: 80px;
+    }
+    .footer_panels{
+        margin-right: 60px;
+    }
+    #toothUp{
+        margin-top: -10px;
+        margin-left: 25px;
+        width: 170px;
+        height: 160px;
+    }
+    .footer_timesButton{
+        margin-right: 120px;
+    }
+
+
+    #toothAppearAboutUs{
+        left: 900px;
+        top: -920px;
+        rotate: 10deg;
+    }
+    #toothAppearDoctors{
+        left: 1420px;
+        top: -700px;
+    }
+    #toothAppearComments{
+        left: 780px;
+    }
+  }

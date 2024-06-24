@@ -1,0 +1,652 @@
+@media screen and (max-width: 425px) {
+    header{
+        width: 425px;
+    }
+    .header_menu{
+        width: 380px;
+    }
+    .header_menu #logo{
+        width: 140px;
+        height: 60px;
+    }
+    .login_header{
+        margin-top: 5px;
+    
+        width: 120px;
+        height: 50px;
+    }
+    .main_menu a{
+        row-gap: 10px;
+    }
+    .main_menu{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 425px;
+        top:0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        padding: 30px 20px;
+        background-color: #FB6A68;
+
+
+        animation: burgerAnimation 0.4s;
+    }
+    .burger{
+        margin-top: 25px;
+        left: -10px;
+    }
+    .burger{
+        margin-top: 22px;
+        display: flex;
+        position: relative;
+        z-index: 50;
+        align-items: center;
+        justify-content: flex-end;
+        width: 40px;
+        height: 30px;
+    }
+    .burger span{
+        height: 3px;
+        width: 80%;
+        transform: scale(1);
+        background-color: #454545;
+    }
+    .burger::before, .burger::after{
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: #454545;
+        transition: all 0.3s ease 0s;
+    }
+    .burger::before{ top:0}
+    .burger::after{ bottom:0}
+    .burger.active span{transform: scale(0);
+    position: fixed;}
+
+    .burger.active::before{
+        top: 5%;
+        transform: rotate(-45deg) translate(0,-50%);
+        width: 40px;
+        position: fixed;
+    }
+    .burger.active::after{
+        width: 40px;
+        bottom: 95%;
+        transform: rotate(45deg) translate(0,50%);
+        position: fixed;
+    }
+    #toothAppearClinicServices {
+        top:-1000px;
+        rotate: -10deg;
+    }
+    .toothAppear{
+        width: 90px;
+        height: 80px;
+    }
+    .main_menu {
+        padding: 0px 0px;
+        
+    }
+    .main_menu a {
+        font-size: 20px;
+    }
+    #iconVxod{
+        display: none;
+    }
+ 
+    #main_page{
+        padding-top: 5px;
+        width: 425px;
+        background-size: contain;
+    }
+   .mainPage{
+        max-width: 425px;
+        height: 420px;
+        background-size: cover;
+   }
+   .main_page_text svg text{
+        font-size: 28px;
+        width: 150px;
+   }
+   .main_page_text svg {
+        width: 150px;
+        height: 30px;
+   }
+   .main_page_text{
+        margin-top: 15px;
+        width: 400px;
+        height: 400px;
+        margin-left: 15px;
+   }
+   .main_page_text h1{
+        margin-left: 10px;
+        font-size: 26px;
+    }
+    .timer_block{
+        margin-left: 15px;
+    }
+    .timer_block span{
+        font-size: 22px;
+    }
+    .main_page_text p{
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        margin-left: 18px;
+    }
+    .main_page_text .timer_block p{
+        font-size: 18px;
+        margin-left: 0px;
+    }
+   .main_page_button{
+        margin-left: 35px;
+   }
+   #timer{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 300px;
+        height: 30px;
+        margin-left: 50px;
+   }
+   .main_page_button{
+        margin-left: 30px;
+        width: 380px;
+   }
+   #signUp{
+        width: 150px;
+        height: 45px;
+        font-size: 18px;
+    }
+    #review{
+        margin-left: 10px;
+        width: 150px;
+        height: 45px;
+        font-size: 18px;
+    }
+    .chto{
+        width: 80px;
+        height: 0px;
+    }
+    #tooth{
+        width: 80px;
+        height: 85px;
+    
+        top: 160px;
+        left: -245px;
+    }
+    #regPhp{
+        width: 150px;
+        height: 45px;
+        font-size: 18px;
+    }
+    #avtorPhp{
+        width: 150px;
+        height: 45px;
+        font-size: 18px;
+        margin-left: 0px;
+    }
+    #loginAvailability{
+        top: 90px;
+        left: 30px;
+    }
+    #modalWindow{
+        background-color: #ffc0c3e1;
+    }
+    #closeModal{
+        height: 72px;
+        width: 72px;
+        left: 80%;
+        top:1%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .message {
+        font-size: 10px;
+    }
+    #usernameAvailability{
+        top: 100px;
+        left: 30px;
+    }
+    #emailAvailability{
+        top:515px;
+        left:30px;
+    }
+    #emailAvailability span{
+        font-size: 10px;
+    }
+    .avtorizacia{
+        left: 7%;
+    }
+    .registracia{
+        left: 7%;
+    }
+    #modalDialogWindow{
+        margin-top: 70px;
+        left: 13%;
+    }
+    #dialogWindow{
+        margin-top: 70px;
+        left: 13%;
+    }
+
+    #clinicSevicesh2{
+        margin: 0 auto;
+        font-size: 22px;
+    }
+    .clinicSevices h3{
+        font-size: 20px;
+    }
+   #clinic_services{
+        width: 425px;
+        height: 900px;
+    }
+    .clinicSevices{
+        margin: 50px auto;
+        width: 425px;
+    }
+    .clinic_services_blocks{
+        margin-top: 30px;
+        width: 425px;
+    }
+    .clinic_services_block{
+        margin: 0px auto;
+        width: 300px;
+        height: 200px;
+    }
+    .arrowService{
+       display: none;
+    }
+    .clinic_services_icons {
+        width: 80px;
+        height: 80px;
+    }
+    .clinic_services_text{
+        margin-top: 35px;
+    }
+    .clinic_services--hover h4{
+        font-size: 18px;
+    }
+    .clinic_services--hover p{
+        font-size: 17px;
+    }
+
+    #aboutUs{
+        width: 425px;
+        height: 1320px;
+    }
+    .about__us{
+        width: 425px;
+        
+    }
+    .about__us h2{
+        margin: 30px auto;
+        font-size: 22px;
+    }
+    .text_aboutUs{
+        padding-left: 15px;
+        width: 400px;
+        min-height: 200px;
+        margin-bottom: 40px;
+        margin-left: 0px;
+    }
+    
+    #toothAppearAboutUs{
+        top: -1180px;
+        left: 300px;
+        rotate: 10deg;
+    }
+    #toothAppearDoctors{
+        top: -620px;
+        left: 330px;
+    }
+    #toothAppearComments{
+        left: 0px;
+    }
+    .text_aboutUs1{
+        width: 400px;
+        font-size: 18px;
+        margin-left: 0px;
+    }
+    .content_img{
+        width: 425px;
+        height: 200px;
+        grid-template: 1fr / 1fr;
+        grid-template-areas: 
+        "familyclinic";
+    }
+    .text_aboutUs span{
+        font-size: 24px;
+    }
+    #familyClinic{
+        font-size: 68px;
+        width: 300px;
+        height: 200px;
+    }
+    #mainPictureAbout{
+        display: none;
+    }
+    .container_quality{
+        width: 425px;
+    }
+    .quality{
+        width: 300px;
+        height: 200px;
+    }
+    .quality p{
+        font-size: 22px;
+    }
+    
+    #doctors .slide-container{
+        max-width: 420px;
+    }
+    #doctors .slide-content{
+        margin: 0px 35px;
+    }
+    /* .doctors_block .swiper-slide{
+        height: 600px !important;
+    }
+    #doctors .swiper-wrapper{
+        height: 600px !important;
+    } */
+    #doctors{
+        width: 425px;
+    }
+    
+    .doctors_mainBlock{
+        width: 425px;
+        height: 700px;
+    }
+    .doctors_mainBlock h2{
+        text-align: center;
+        margin: 30px auto;
+        font-size: 22px;
+    }
+    .doctors_mainBlock h3{
+        width: 100%;
+        font-size: 17px;
+        height: 23px;
+    }
+    .container_doctors{
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 425px;
+        height: 503px;
+    }
+    .DoctorstextBackground{
+        height: 145px;
+    }
+    
+    .doctors_block_text p{
+        font-family: manrope;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .DoctorsformPodrobnee{
+        top: 470px;
+        left: 230px;
+        font-size: 17px;
+    }
+    .doctors_block_text--hover{
+        height: 500px;
+    }
+    .doctors_block_text--hover h4{
+        font-size: 24px;
+    }
+    .doctors_block_text--hover p{
+        font-size: 20px;
+    }
+    .doctors_block_text--hover span {
+        top: 450px;
+        left: 135px;
+        font-size: 24px;
+    }
+    .doctors_block{
+        width: 330px;
+        height: 499px;
+    }
+    #doctorArrowLeft{
+        width: 40px;
+        height: 40px;
+    }
+    #doctorArrowRight{
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+    #form_signup{
+        width: 425px;
+    }
+    .formSignup{
+        margin: 50px auto;
+        width: 400px;
+        height: 340px;
+    }
+    .container_form_signup h2{
+        font-size: 24px;
+        margin-top: 15px;
+        margin-left: 70px;
+    }
+    .container_form_signup h2 strong {
+        margin-left: 10px;
+    }
+    .formSignup p{
+        margin-top: 10px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .formSignup form{
+        margin-top: 15px;
+        margin-left: 60px;
+        width: 300px;
+        height: 170px;
+        row-gap: 10px;
+    }
+    .formSignup form input{
+        font-size: 16px;
+        width: 250px;
+        height: 50px;
+    }
+    #signUp_form{
+        width: 293px;
+        height: 55px;
+        font-size: 18px;
+        text-shadow: none;
+    }
+
+
+    #comments{
+        width: 425px;
+    }
+    .comments{
+        margin: 50px auto;
+        width: 425px;
+    }
+    .comments h2{
+        text-align: center;
+        font-size: 22px;
+        margin: 30px auto;
+    }
+    .container_comments{
+        min-width: 400px;
+        height: 300px;
+    }
+    .comments_block{
+        width: 400px;
+        height: 280px;
+    }
+    .comments_block img{
+        width: 200px;
+        height: 165px;
+        background-size: cover;
+        border-radius: 0px 0px 10px 0px;
+    }
+    .comments_block_text{
+        width: 200px;
+    }
+    .comments_block_text h4 {
+        margin-top: 10px;
+        font-size: 16px;
+
+        position: relative;
+        height: 50px;
+        width: 150px;
+    }
+    .comments_block_text p{
+        position: relative;
+        top: 30px;
+        left: -190px;
+        font-size: 19px;
+        width: 380px;
+    }
+    .comments_block_data{
+        top: 140px;
+    }
+    .data_comments{
+        width: 200px;
+        font-size: 18px;
+        color: #454545;
+        text-decoration: underline;
+    }
+    #commentsLike{
+        position: relative;
+        top: 105px;
+        left: -50px;
+    }
+    .comments_block_text h3{
+        font-size: 30px;
+        height: 72px;
+    }
+    .comments_block_text span{
+        font-size: 16px;
+    }
+    #arrowComments{
+        width: 300px;
+    }
+
+
+
+
+    #footer{
+        width: 425px;
+    }
+    footer{
+        width: 425px;
+    }
+    .dropdown{
+        max-width: 425px;
+    }
+    .container_comments{
+        min-width: 400px;
+        height: 360px;
+    }
+    .dropdown-heading{
+        font-size: 22px;
+        padding-top: 15px;
+        padding-left: 55px;
+        height: 35px;
+        width: 370px;
+    }
+    #comments .swiper-scrollbar {
+        margin-top: 0px;
+        width: 200px;
+    }
+    .dropdown_link{
+        text-decoration: none;
+        font-size: 20px;
+        color: #FFA8AD;
+    }
+    .dropdown-menu1 li{
+        background-color: white;
+        width: 423px;
+        height: 35px;
+
+        line-height: 35px;
+        margin-left: -40px;
+    }
+    .dropdown-menu2 li{
+        background-color: white;
+        width: 425px;
+        height: 35px;
+
+        line-height: 35px;
+        font-size: 20px;
+    }
+    .footer_logo{
+        left: -50px;
+        top: 250px;
+    }
+    .footer_logo p{
+        margin-top: -40px;
+        font-size: 18px;
+        text-align: center;
+        margin-left: 80px;
+    }
+    .footer_logo #logo{
+        display: none;
+    }
+    #toothUp{
+        position: relative;
+        width: 170px;
+        height: 165px;
+
+        margin-top: 0px;
+        margin-left: 0px;
+        top: -100px;
+    }
+    .footer_social{
+        width: 120px;
+        height: 44px;
+    }
+    .footer_drop{
+        position: relative;
+    }
+    .strekaDropdown{
+        height: 32px;
+        width: 32px;
+        background-size: cover;
+        background-image: url(/images/strelkaDropDown.png);
+    }
+    #strekaDropdown1{
+        margin-left: 225px;
+    }
+    #strekaDropdown2{
+        margin-left: 210px;
+    }
+    .footer_socials{
+        width: 135px;
+        position: relative;
+        left: 105px;
+        top: 25px;
+    }
+    #name768{
+        position: relative;
+        left: -78px;
+        top: -290px;
+        width: 240px;
+        height: 26px;
+        background-image: url(/images/NameClinicFooter768.svg);
+        background-size: cover;
+        display: block;
+    }
+
+    .error-message{
+        font-size: 10px;
+    }
+
+    .comments_block_behind h3{
+        font-size: 22px;
+        margin-top: 5px;
+    }
+    .comments_block_behind p{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .CommentsformBack{
+        left: 170px;
+        top:245px;
+    }
+}

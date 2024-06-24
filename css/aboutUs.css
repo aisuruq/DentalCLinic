@@ -1,0 +1,241 @@
+#aboutUs{
+    width: 100%;
+    min-height: 100px;
+    background-image: url(/images/BackAbout.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about__us{
+    width: 1440px;
+    height: 975px;
+    margin: 100px auto;
+
+    display: flex;
+    flex-direction: column;
+}
+.text_aboutUs{
+    display: flex;
+    height: 110px;
+    width: 1440px;
+    margin: 0 auto;
+
+    font-size: 25px;
+    font-family: manrope;
+    font-weight: 500;
+
+    justify-content: space-between;
+}
+.text_aboutUs span{
+    cursor: pointer;
+    color: #FB6A68;
+    font-weight: 800;
+    font-size: 28px;
+    transition: 0.4s ease;
+}
+.text_aboutUs span:hover{
+    text-decoration: underline;
+    text-decoration-color: #FB6A68;
+}
+.content_img{
+    margin: 30px auto;
+    width: 1440px;
+    height: 430px;
+
+    display: grid;
+    grid-template: 200px 30px 200px / 300px 30px 430px 30px 650px;
+    grid-template-areas: 
+    "dentalroom  familyclinic girlabout"
+    "dentalroom  decoration girlabout";
+}
+#DentalRoom{
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    border-radius: 20px;
+    grid-area: dentalroom;
+    width: 300px;
+    height: 430px;
+}
+
+#Decoration{
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    background-image: url(/images/decoration.jpg);
+    background-size: contain;
+
+    border-radius: 20px;
+    grid-area: decoration;
+    width: 430px;
+    height: 200px;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    transition: background-color 0.5s ease;
+}
+#mainPictureAbout{
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    background-image: var(--background-image);
+    background-size: cover;
+
+    grid-area: girlabout;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    width: 650px;
+    height: 430px;
+    border-radius: 20px;
+    transition: background-image 0.5s ease;
+}
+
+.container_quality{
+    width: 1440px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.quality{
+    border: 2px solid rgba(0, 0, 0, 0.226);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 460px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.about__us h2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    width: 180px;
+    --s: 0.1em; 
+    --c: #FFA8AD;
+    
+    color: #0000;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#454545 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+
+    -webkit-background-clip: text,padding-box;
+    background-clip: text,padding-box;
+    transition: 0.5s ease;
+
+
+    font-family: monospace;
+    font-size: 34px;
+    cursor: pointer;
+}
+.about__us h2:hover {--_p: 100%}
+
+
+#familyClinic{
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    border-radius: 20px;
+    grid-area: familyclinic;
+    width: 430px;
+    height: 200px;
+    background-color: var(--background);;
+    grid-column-start: 3;
+    font-size: 88px;
+    font-weight: 900;
+    letter-spacing: 3px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+    font-family: manrope;
+    text-shadow: -1px -1px 0px var(--background),
+    3px 3px 0px var(--background),
+    6px 6px 0px #00000077;
+    line-height: 85px;
+}
+.icon {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    stroke: #454545;
+    stroke-width: 4px;
+    fill: none;
+}
+.toothquality{
+    width: 115px;
+    height: 115px;
+    top: -8px;
+}
+.quality:hover .icons--dasharray-anim{
+    stroke: #454545;
+    stroke-width: 4px;
+    stroke-dasharray: 0 300;
+    stroke-dashoffset: 1000;
+    animation: dasharray 5s infinite alternate;
+}
+.quality:hover{
+    transform: scale(1.05);
+}
+@keyframes dasharray {
+    100% {
+      stroke-dasharray: 300 0;
+    }
+}
+.quality p{
+    margin-top: 10px;
+    font-family: manrope;
+    font-size: 32px;
+    color: #454545;
+    font-weight: 400;
+}
+.quality.green p{
+    width: 21ch;
+    margin-top: -5px;
+}
+.quality.green:hover p{
+    animation: printed-text 4s steps(21);
+}
+.quality.blue:hover p{
+    animation: printed-text 2.5s steps(19);
+}
+.quality.yellow:hover p{
+    animation: printed-text 2s steps(12);
+}
+.quality.blue p{
+    width: 19ch;
+}
+.quality.yellow p{
+    width: 12ch;
+}
+.quality:hover p{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #454545;
+    animation: flashing-border 1s step-end infinite;
+}
+@keyframes flashing-border {
+    0%{
+        border-color: #454545;
+    }
+    50%{
+        border-color: transparent;
+    }
+    100%{
+        border-color: #454545;
+    }
+}
+@keyframes printed-text {
+    from{
+        width: 0;
+    }
+}
+
+#toothAppearAboutUs{
+    position: relative;
+    left: -170px;
+    top: -350px;
+    rotate: -10deg;
+    display: none;
+
+    transition: display 0.4s ease;
+    animation: toothAppearAnimation 0.6s infinite;
+}
+#toothAppearAboutUs:hover{
+    animation: none;
+}

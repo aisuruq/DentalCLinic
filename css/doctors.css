@@ -1,0 +1,184 @@
+#doctors{
+    width: 100%;
+    min-height: 200px;
+
+    background-image: url(/images/doctorsBack.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.doctors_mainBlock{
+    margin: 100px auto;
+    border-radius: 20px;
+    width: 1440px;
+    height: 840px;
+
+    display: flex;
+    flex-direction: column;
+}
+.photo{
+    width: 420px;
+    height: 340px;
+
+    border-radius: 20px 20px  0 0;
+    background-size: cover;
+}
+#stomatolog1{background-image: url(/images/stomatologM5.jpeg);}
+#stomatolog2{background-image: url(/images/stomatologF1.png);}
+#stomatolog3{background-image: url(/images/stomatologM3.png);}
+#stomatolog4{background-image: url(/images/stomatologM6.jpeg);}
+#stomatolog5{background-image: url(/images/stomatologM2.jpeg);}
+#stomatolog6{background-image: url(/images/stomatologF4.jpeg);}
+
+.doctors_block_text h3{
+    text-align: center;
+    padding-top: 5px;
+    margin-top: -8px;
+    font-family: FiraCode;
+    font-size: 25px;
+    font-weight: 900;
+    background-color: #FB6A68;
+
+    text-shadow: 1px 1px 3px black;
+    color: white;
+    
+    width: 420px;
+    height: 35px;
+}
+.doctors_block_text p{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+
+    font-size: 22px;
+    color: white;
+    font-family: monospace;
+}
+.DoctorstextBackground{
+    background-color: #454545;
+    width: 420px;
+    height: 200px;
+    border-radius: 0 0 20px 20px;
+}
+.DoctorsformPodrobnee{
+    font-family: firaCode;
+    font-weight: 900;
+
+    text-underline-offset: 2px;
+    color: #FB6A68;
+    text-decoration: underline;
+
+    position: absolute;
+    left: 280px;
+    top: 530px;
+}
+.doctors_mainBlock h2{
+    margin-top: 50px;
+
+    width: 305px;
+    --s: 0.1em; 
+    --c: #FFA8AD;
+    
+    color: #0000;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#454545 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+
+    -webkit-background-clip: text,padding-box;
+    background-clip: text,padding-box;
+    transition: 0.5s ease;
+
+
+    font-family: monospace;
+    font-size: 34px;
+    cursor: pointer;
+}
+.doctors_mainBlock h2:hover {--_p: 100%}
+
+#doctors .slide-content{
+    margin: 50px 70px;
+    overflow: hidden;
+}
+#doctors .slide-container{
+    max-width: 1440px;
+    width: 100%;
+    height: 640px;
+}
+#doctors .swiper-button-next{
+    right: 0;
+}
+#doctors .swiper-button-prev{
+    left: 0;
+}
+#doctors .swiper-navBtn{
+    color:#FB6A68;
+    transition: 0.3s ease;
+}
+#doctors .swiper-navBtn:hover{
+    color: #fdaba9;
+}
+#doctors .swiper-slide{
+    border: 2px solid rgba(0, 0, 0, 0.411);
+    border-radius: 20px;
+}
+.doctors_block_text span:hover{
+   color: #ffffff;
+   cursor: pointer;
+   transition: 0.4s ease;
+}
+.doctors_block_text--hover{
+    height: 570px;
+    background-color: #454545;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+}
+.doctors_block_text--hover p{
+  font-size: 24px;
+  color: white;
+  font-family: monospace;
+  padding: 10px;
+  text-align: center;
+}
+.doctors_block_text--hover h4{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-size: 30px;
+    color: #FB6A68;
+    padding: 10px;
+    text-align: center;
+  }
+.doctors_block_text--hover span{
+    font-family: firaCode;
+    font-weight: 900;
+    position: absolute;
+    top: 520px;
+    left: 170px;
+    text-underline-offset: 5px;
+    color: #FB6A68;
+    text-decoration: underline;
+    font-size: 26px;
+    text-align: center;
+}
+.doctors_block_text--hover span:hover{
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.4s ease;
+ }
+.content_doctors_block{
+    display: block;
+}
+
+#toothAppearDoctors{
+    position: relative;
+    left: 1420px;
+    top: -600px;
+    rotate: 10deg;
+    display: none;
+
+    transition: display 0.4s ease;
+    animation: toothAppearAnimation 0.6s infinite;
+}
+#toothAppearDoctors:hover{
+    animation: none;
+}

@@ -1,0 +1,292 @@
+#main_page{
+    width: 100%;
+    min-height: 300px;
+}
+.mainPage{
+    width: 1920px;
+    height: 800px;
+    background-image: url(/images/mainPage.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+    margin: 0 auto;
+}
+.main_page_text{
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 220px;
+
+    width: 660px;
+    height: 500px;
+}
+.main_page_text h1{
+    font-size: 46px;
+    color: #45494E;
+    font-family: Manrope;
+    font-weight: 500;
+}
+.main_page_text h1 strong{
+    color: #FB6A68;
+    font-weight: 600;
+}
+#timer{
+    font-family: Manrope;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.timer_block span{
+    font-family: monospace;
+    font-size: 44px;
+    color: rgb(48, 48, 48);
+    text-shadow: 1px 1px 2px #FFA8AD;;
+}
+.main_page_text .timer_block p{
+    font-size: 34px;
+    color: #888888;
+    margin-top: -5px;
+    margin-left: -15px;
+}
+.main_page_text p{
+    margin-top: 30px;
+    color: #45494E;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+
+
+.main_page_button{
+    display: flex;
+}
+#days{
+    margin-left: -12px;
+}
+#hours{
+    margin-left: 5px;
+}
+#minutes{
+    margin-left: 5px;
+}
+#seconds{
+    margin-left: 10px;
+}
+
+
+
+.main_page_text svg text {
+    letter-spacing: 10px;
+    stroke: #FB6A68;
+    font-size: 42px;
+    font-weight: 700;
+    stroke-width: 3;
+   
+    animation: textAnimate 5s infinite alternate;
+    
+  }
+  
+@keyframes textAnimate {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset:  20%;
+      fill:hsl(0, 100%, 70%)
+  
+    }
+    
+    100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: hsla(0, 69%, 75%, 0)
+    }
+    
+}
+
+
+#signUp{
+    width: 315px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    isolation: isolate;
+    cursor: pointer;
+    position: relative;
+
+    background-color: #FFA8AD;
+    border: 5px solid #FFA8AD;
+    border-radius:20px;
+    overflow: hidden;
+
+    color: white;
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#signUp > span {
+    z-index: -1;
+    position: absolute;
+    width: 33.333%;
+    height: 100%;
+    opacity: 0.5;
+
+    background-color: transparent;
+}
+#signUp > :first-child{
+    left: 0;
+    top: 0;
+}
+#signUp > :last-child{
+    right: 0;
+    top: 0;
+}
+#signUp::before{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    background: #FFFFFF;
+    width: 10%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    inset: 0;
+    margin: auto;
+    opacity: 0;
+    transition: transform 1s 200ms, opacity 200ms;
+
+}
+@keyframes FillText {
+    from {color: #FFFFFF;}
+    to {color: #FFA8AD;}
+}
+#signUp:hover{
+    animation: FillText 0.3s forwards;
+}
+#signUp:hover::before{
+    transform: scale(20);
+    opacity: 1;
+    transition: transform 1.5s , opacity 0.5s;
+}
+#signUp:has(:first-child:hover)::before{
+    margin-left: 0;
+}
+#signUp:has(:last-child:hover)::before{
+    margin-right: 0;
+}
+#signUp:has(:last-child:hover)::before,
+#signUp:has(:first-child:hover)::before{
+    transition: transform 1s, opacity 0.25s;
+}
+
+
+
+
+#review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    isolation: isolate;
+    cursor: pointer;
+
+    margin-left: 30px;
+    width: 315px;
+    height: 80px;
+    border-radius:20px;
+    border: 5px solid #FFA8AD;
+    background-color: white;
+
+    color: #FFA8AD;
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 700;
+
+    overflow: hidden;
+}
+
+#review > span {
+    z-index: -1;
+    position: absolute;
+    width: 33.333%;
+    height: 100%;
+    opacity: 0.5;
+
+    background-color: transparent;
+}
+#review > :first-child{
+    left: 0;
+    top: 0;
+}
+#review > :last-child{
+    right: 0;
+    top: 0;
+}
+#review::before{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    background: #FFA8AD;
+    width: 10%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    inset: 0;
+    margin: auto;
+    opacity: 0;
+    transition: transform 1s 200ms, opacity 200ms;
+}
+@keyframes FillTextReview {
+    from {color: #FFA8AD;}
+    to {color: #FFFFFF;}
+}
+#review:hover{
+    animation: FillTextReview 0.3s forwards;
+}
+#review:hover::before{
+    transform: scale(20);
+    opacity: 1;
+    transition: transform 1.5s , opacity 0.5s;
+}
+#review:has(:first-child:hover)::before{
+    margin-left: 0;
+}
+#review:has(:last-child:hover)::before{
+    margin-right: 0;
+}
+#review:has(:last-child:hover)::before,
+#review:has(:first-child:hover)::before{
+    transition: transform 1s, opacity 0.25s;
+}
+
+#tooth{
+    width: 91px;
+    height: 94px;
+    cursor: pointer;
+
+    background-image: url(/images/pngDown.png);
+    background-size: cover;
+    position: relative;
+    top: 305px;
+    left: -860px;
+    animation: 4s ease-in-out 0s normal none infinite running trambling-animation;
+}
+
+@keyframes trambling-animation {
+    0%, 50%, 100% {
+        transform: translateY(0px);
+    }
+    10%, 30% {
+        transform: translateY(5px);
+    }
+    20%, 40% {
+        transform: translateY(-20px);
+    }
+    
+}

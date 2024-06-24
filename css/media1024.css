@@ -1,0 +1,432 @@
+@media screen and (max-width: 1024px) {
+    header{
+        max-width: 1024px;
+    }
+    .header_menu{
+        font-size: 18px;
+        margin-left: 10px;
+        width: 980px;
+        display: grid;
+        grid-template: 1fr / 140px 20px 4fr 25px 200px 25px 1fr;
+    }
+    #logo{
+        width: 140px;
+        height: 60px;
+    }
+    .login_header{
+        width: 120px;
+        height: 50px;
+        font-size: 26px;
+        margin-top: 0px;
+    }
+    .main_menu .dropdown_content .dropdown_item {
+        width: 190px;
+    }
+    .main_menu .dropdown .dropdown_content {
+        margin-top: 12px;
+    }
+    .main_menuLink.dropdown_link {
+        padding-bottom: 17px;
+    }
+    .main_menu .dropdown{
+        margin-top: -10px;
+     }
+    #iconTel{
+        width: 20px;
+        height: 20px;
+    }
+    .tel_header{
+        height: 52px;
+        font-size: 17px;
+        margin-left: 5px;
+    }
+
+    #loginAvailability{
+        top: 95px;
+        left:35px;
+    }
+    #loginAvailability span{
+
+        font-size: 14px;
+    }
+    #usernameAvailability{
+        top: 100px;
+        left: 30px;
+    }
+    #emailAvailability span{
+        top: -70px;
+        font-size: 14px;
+        left: -20px;
+    }
+    #main_page{
+        width: 1024px;
+    }
+    .mainPage{
+        width: 1024px;
+        height: 550px;
+        background-image: url(/images/mainPage1024.png);
+    }
+    .main_page_text h1{
+        font-size: 36px;
+    }
+    .main_page_text{
+        margin-left: 30px;
+        margin-top: -100px;
+        width: 600px;
+    }
+    .timer_block span{
+        font-size: 30px;
+    }
+    .main_page_text .timer_block p{
+        font-size: 24px;
+    }
+    #timer{
+        margin-top: 20px;
+        width: 400px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    .main_page_text p{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    #signUp{
+        width: 250px;
+        height: 60px;
+        font-size: 28px;
+    }
+    #review{
+        margin-left: 10px;
+        width: 250px;
+        height: 60px;
+        font-size: 28px;
+    }
+    #tooth{
+        width: 95px;
+        height: 97px;
+    
+        top: 195px;
+        left: -385px;
+    }
+
+    #clinic_services{
+        width: 1024px;
+    }
+    .clinicSevices{
+        margin-left: 30px;
+        width: 980px;
+        height: 400px;
+        display: flex;
+    }
+    .clinic_services_icons{
+        width: 85px;
+        height: 85px;
+    }
+    .clinic_services_text h4{
+        font-size: 20px;
+    }
+    .clinic_services_text h3{
+        font-size: 24px;
+    }
+    .clinic_services--hover h4{
+        font-size: 20px;
+    }
+    .clinic_services--hover p{
+        font-size: 17px;
+    }
+    #clinicSevicesh2{
+        font-size:  30px;
+    }
+    .clinic_services_blocks{
+        align-items: center;
+        width: 970px;
+    }
+    .clinic_services_block{
+        width: 230px;
+    }
+    .toothAppear{
+        width: 115px;
+        height: 110px;
+    }
+    #toothAppearClinicServices{
+        left: 500px;
+    }
+
+    #aboutUs{
+        width: 1024px;
+       
+    }
+    .about__us{
+        width: 1024px;
+    }
+    .about__us h2{
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    .text_aboutUs{
+        width: 980px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .content_img{
+        margin: 20px auto;
+
+        width: 970px;
+        grid-template: 200px 20px 200px / 350px 20px 600px;
+    }
+    #DentalRoom{
+        display: none;
+    }
+    #familyClinic{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        width: 350px;
+        font-size: 80px;
+    }
+    #Decoration{
+        grid-column-start: 1;
+        grid-row-start: 3;
+        width: 350px;
+    }
+    #mainPictureAbout{
+        grid-column-start: 3;
+        grid-row-start: 1;
+        width: 600px;
+    }
+    .container_quality{
+        margin-left: 30px;
+        width: 970px;
+    }
+    .quality{
+        width: 310px;
+    }
+    .quality p{
+        font-size: 24px;
+    }
+    #toothAppearAboutUs{
+        left: 400px;
+        top: -910px;
+    }
+    #regPhp{
+        width: 250px;
+        height: 60px;
+        margin-left: 10px;
+        font-size: 24px;
+    }
+    #avtorPhp{
+        width: 250px;
+        height: 60px;
+        
+        font-size: 24px;
+    }
+    #closeModal{
+        top: 2%;
+        left: 90%;
+    }
+    .avtorizacia{
+        width: 350px;
+        height: 250px;
+        left: 30%;
+        top: 30%;
+    }
+    .registracia{
+        width: 350px;
+        height: 600px;
+        top: 12%;
+        left: 30%;
+    }
+    #dialogWindow{
+        margin-top: 100px;
+        width: 250px;
+        height: 100px;
+
+        font-size: 22px;
+    }
+    #modalDialogWindow{
+        margin-top: 120px;
+        width: 250px;
+        height: 100px;
+
+        font-size: 22px;
+        left: 35%;
+    }
+
+    #doctors .slide-container{
+        max-width: 960px;
+    }
+    #doctors{
+        width: 1024px;
+    }
+    .doctors_mainBlock{
+        width: 1024px;
+    }
+    .doctors_mainBlock h2{
+        margin-left: 70px; 
+        font-size: 30px;
+    }
+
+    #form_signup{
+        width: 1024px;
+    }
+    .formSignup{
+        width: 960px;
+        height: 270px;
+    }
+    .formSignup form{
+        margin-top:20px;
+        width: 860px;
+    }
+    .formSignup form input{
+        width: 245px;
+        height: 70px;
+        font-size: 18px;
+    }
+    .container_form_signup{
+        margin: 30px auto;
+    }
+    #signUp_form{
+        width: 260px;
+        height: 75px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .formSignup h2 {
+        font-size: 40px;
+    }
+    .formSignup  p{
+        margin-top:20px;
+        font-size: 22px;
+    }
+
+    #comments{
+        width: 1024px;
+    }
+    .comments{
+        width: 1024px;
+    }
+    .container_comments{
+        min-width: 970px;
+    }
+    .comments_block_text {
+        margin: 0;
+        padding-left: 5px;
+    }
+    .comments_block_text h3{
+        font-size: 23px;
+    }
+    .comments_block_text h4{
+        position: relative;
+        height: 25px;
+        width: 230px;
+        margin-top: 0;
+        overflow: hidden;
+        font-size: 15px;
+    }
+    .container_comments img{
+        width: 245px;
+    }
+    .comments_block_text p{
+        margin-top: 5px;
+        font-size: 17px;
+    }
+    .comments_block_data{
+        font-size: 17px;
+    }
+    .comments_block_data{
+        position: absolute;
+        top: 225px;
+    }
+    #commentsLike{
+        left: 22px
+    }
+
+    #footer{
+        width: 1024px;
+    }
+    footer{
+        width: 1024px;
+    }
+    .footer_logo{
+        margin-left: 20px;
+    }
+    .footer_logo{
+        font-size: 17px;
+    }
+    .footer_logo #logo{
+        width: 160px;
+        height: 70px;
+    }
+
+    .footer_links {
+        font-size: 18px;
+        font-family: manrope;
+        grid-template: 40px 40px/ 100px 80px;
+    }
+    .social__icon{
+        width: 40px;
+        height: 40px;
+    }
+    .footer_socials{
+        width: 165px;
+    }
+    #toothUp{
+        margin-left: 0px;
+    }
+    .footer_panels a{
+        font-size: 18px;
+    }
+    .footer_panels{
+        margin-top: 0px;
+        margin-right: 50px;
+        height: 120px;
+        width: 220px;
+    }
+    #telFooter{
+        font-size: 20px;
+    }
+    .footer_timesButton{
+        margin-top: 20px;
+        margin-right: 25px;
+        height: 150px;
+        width: 200px;
+    }
+    .footer_timesButton p{
+        font-size: 16px;
+    }
+    .button_footer{
+        width: 180px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .button_footer:hover{
+        font-size: 20px;
+    }
+    #toothUp {
+        width: 110px;
+        height: 100px;
+    }
+
+    .error-message{
+        font-size: 10px;
+    }
+    .container_comments img{
+        width: 240px;
+    }
+    .comments_block_data {
+        position: absolute;
+        top: 220px;
+    }
+
+    .comments_block_behind h3{
+        font-size: 22px;
+        margin-top: 5px;
+    }
+    .comments_block_behind p{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .CommentsformBack{
+        left: 200px;
+    }
+}

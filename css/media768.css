@@ -1,0 +1,668 @@
+@media screen and (max-width: 768px) {
+    header{
+        width: 768px;
+        position: relative;
+    }
+    .header_menu #logo{
+        width: 180px;
+        height: 80px;
+    }
+    .header_menu{
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .login_header{
+        font-size: 30px;
+        margin-top: 5px;
+    }
+    .main_menu .main_menuLink:hover:before{
+        animation: none;
+        width: 0px;
+    }
+    .main_menuLink.dropdown_link{
+        padding-bottom: 0px;
+        left: 55px;
+    }
+    .main_menu .main_menuLink.dropdown_link:hover:before{
+        width: 0px;
+    }
+    .dropdown_link span{
+        display: none;
+    }
+    .main_menu .dropdown:hover .dropdown_content{
+        display: none;
+    }
+    .burger{
+        margin-top: 29px;
+        display: flex;
+        position: relative;
+        z-index: 50;
+        align-items: center;
+        justify-content: flex-end;
+        width: 40px;
+        height: 30px;
+    }
+    .burger span{
+        height: 3px;
+        width: 80%;
+        transform: scale(1);
+        background-color: #454545;
+    }
+    .burger::before, .burger::after{
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: #454545;
+        transition: all 0.3s ease 0s;
+    }
+    .burger::before{ top:0}
+    .burger::after{ bottom:0}
+    .burger.active span{transform: scale(0);
+    position: fixed;}
+
+    .burger.active::before{
+        top: 5%;
+        transform: rotate(-45deg) translate(0,-50%);
+        width: 40px;
+        position: fixed;
+    }
+    .burger.active::after{
+        width: 40px;
+        bottom: 95%;
+        transform: rotate(45deg) translate(0,50%);
+        position: fixed;
+    }
+    .tel_header{
+        display: none;
+    }
+    .main_menu{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 768px;
+        top:0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        padding: 50px 40px;
+        background-color: #FB6A68;
+
+
+        animation: burgerAnimation 0.4s;
+    }
+    .main_menu a{
+        flex-direction: column;
+        row-gap: 20px;
+        color: white;
+        font-size: 28px;
+        text-shadow: 0 0 3px black;
+        transition: 0.4s ease;
+    }
+    .main_menu a:hover{
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+    .open{
+        display: flex !important;
+    }
+    @keyframes burgerAnimation {
+        from {opacity: 0}
+        to {opacity: 1}
+    }
+    #regPhp{
+        height: 70px;
+    }
+    #avtorPhp{
+        height: 70px;
+        margin-left: 0px;
+    }
+    #closeModal{
+        height: 84px;
+        width: 84px;
+        left: 85%;
+        background-size: cover;
+    }
+    .avtorizacia{
+        width: 350px;
+        height: 250px;
+        left: 30%;
+        top: 30%;
+    }
+    .registracia{
+        width: 350px;
+        height: 600px;
+        top: 12%;
+        left: 30%;
+    }
+    .avtorizacia{
+        left: 25%;
+    }
+    .registracia{
+        left: 25%;
+    }
+    #modalDialogWindow{
+        left: 30%;
+    }
+    #dialogWindow{
+        left: 30%;
+    }
+    #loginAvailability{
+        top: 95px;
+        left:35px;
+    }
+    #usernameAvailability{
+        top: 100px;
+        left: 30px;
+    }
+    #emailAvailability{
+        top:515px;
+        left:30px;
+    }
+    #emailAvailability span{
+        top: 0px;
+        font-size: 14px;
+        left: 0px;
+    }
+
+    #timer{
+        margin-top: 30px;
+        text-align: center;
+        margin-left: 50px;
+        width: 450px;
+    }
+    .main_page_text h1{
+        font-size: 48px;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 0 0 3px black;
+    }
+    .main_page_text p{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .timer_block span{
+        font-size: 38px;
+        text-shadow: 0 0 3px black;
+        color: #FFA8AD;
+    }
+    .main_page_text .timer_block p{
+        font-size: 34px;
+        color: white;
+        text-shadow: 0 0 3px #FFA8AD;
+        text-align: center;
+    }
+    .main_page_text p{
+        color: white;
+        text-shadow: 0 0 3px black;
+        margin-bottom: 30px;
+        font-size: 24px;
+        text-align: center;
+    }
+    #main_page{
+        width: 768px;
+    }
+    .mainPage{
+        width: 768px;
+        height: 900px;
+        background-size: cover;
+        background-image: url(/images/mainPage764.png);
+    }
+    .main_page_text{
+        margin-top: 20px;
+        margin-left: 100px;
+        width: 675px;
+        height: 800px;
+    }
+    .login_header{
+        width: 150px;
+        height: 65px;
+    }
+    #signUp{
+        height: 70px;
+    }
+    #review{
+        height: 70px;
+    }
+
+    #clinic_services{
+        width: 768px;
+        height: 1150px;
+    }
+    .clinicSevices{
+        margin-left: 0px;
+        height: 1100px;
+        width: 768px;
+    }
+    .about__us h2{
+        text-align: center;
+        margin: 40px auto;
+    }
+    #toothAppearClinicServices {
+        top: -800px;
+        left: 0px;
+    }
+    #clinicSevicesh2{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .clinic_services_blocks{
+        width: 768px;
+        margin-left: 0px;
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr;
+        row-gap: 20px;
+    }
+    .clinic_services_block{
+        margin: 0px auto;
+        width: 500px;
+        height: 250px;
+    }
+    #toothAppearAboutUs {
+        left: 0px;
+        top: -940px;
+        rotate: -10deg;
+    }
+    .clinic_services--hover p{
+        font-size: 24px;
+        padding: 10px;
+    }
+    .clinic_services_icons{
+        width: 110px;
+        height: 110px;
+    
+        margin-bottom: 5px;
+        background-size: cover;
+    }
+    .clinic_services_text h3{
+        font-size: 30px;
+    }
+    .clinic_services_text h2{
+        font-size: 36px;
+    }
+    #tooth{
+        width: 170px;
+        height: 175px;
+       
+        top: 350px;
+        left: -360px;
+    }
+   .chto{
+        width: 180px;
+        height: 185px;
+   }
+
+    #aboutUs{
+        width: 768px;
+        height: 2000px;
+    }
+    .about__us{
+        width: 768px;
+        
+    }
+    .text_aboutUs{
+        text-align: center;
+        width: 600px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+        font-size: 24px;
+    }
+    .text_aboutUs1{
+        width: 600px;
+        margin-left: 50px;
+    }
+    .content_img{
+        width: 768px;
+        height: 570px;
+
+        grid-template: 1fr 1fr / 1fr;
+        grid-template-areas: 
+        "familyclinic"
+        "girlabout";
+    }
+    #DentalRoom{
+       display: none;
+    }
+    #familyClinic{
+        width: 500px;
+        height: 200px;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        margin: 0 auto;
+    }
+    #Decoration{
+        display: none;
+    }
+    #mainPictureAbout{
+        width: 500px;
+        height: 350px;
+        grid-row-start: 3;
+        grid-column-start: 1;
+        margin: 0 auto;
+    }
+    .container_quality{
+        margin-left: 0px;
+        width: 768px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .quality{
+        margin: 0 auto;
+        width: 500px;
+        height: 250px;
+    }
+    .quality p{
+        font-size: 34px;
+    }
+
+    #doctors .slide-container {
+        max-width: 700px;
+    }
+    #doctors{
+        width: 768px;
+    }
+    .doctors_mainBlock{
+        width: 768px;
+        height: 900px;
+    }
+    .content_doctors_block p{
+        font-size: 24px;
+    }
+    .DoctorsformPodrobnee{
+        top: 515px;
+        left: 370px;
+        font-size: 24px;
+    }
+    .doctors_block_text--hover p {
+        font-size: 26px;
+    }
+    #toothAppearDoctors {
+        left: 430px;
+        top: -720px;
+        rotate: 0px;
+    }
+    .doctors_block_text--hover span {
+        top: 510px;
+        left: 240px;
+    }
+
+    #form_signup{
+        width: 768px;
+    }
+    .formSignup{
+        width: 700px;
+        height: 550px;
+    }
+    .container_form_signup h2{
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+    .formSignup p{
+        margin-top: 20px;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .formSignup form{
+        margin-left: 85px;
+        width: 600px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .container_form_signup {
+       margin-top: 0px;
+       margin-left: 0px;
+       text-align: center;
+    }
+    .formSignup form input{
+        width: 500px;
+        height: 80px;
+        font-size: 22px;
+    }
+    #signUp_form{
+        width: 540px;
+        height: 85px;
+        font-size: 24spx;
+    }
+
+    #comments{
+        width: 768px;
+    }
+    .comments{
+        width: 768px;
+    }
+    #toothAppearComments {
+        left: 500px;
+    }
+    .container_comments{
+        min-width: 660px;
+        height: 320px;
+    }
+    .comments_block{
+        width: 660px;
+        height: 100%;
+    }
+    .comments_block_text{
+        padding-top: 5px;
+        padding-left: 5px;
+        margin: 0;
+        height: 250px;
+    }
+    .comments_block img{
+        width: 290px;
+        height: 280px;
+        background-size: cover;
+    }
+    #comments .swiper-scrollbar {
+        margin-top: 20px;
+        width: 200px;
+    }
+    .comments_block_data{
+        top: 250px;
+        font-size: 20px;
+    }
+    #commentsLike{
+        top: -5px;
+        left: 130px;
+    }
+    .comments_block_text p{
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    .comments_block_text h3{
+        font-size: 28px;
+    }
+    .comments_block_text span{
+        font-size: 18px;
+    }
+    #arrowComments{
+        width: 500px;
+    }
+
+
+
+
+    #footer{
+        width: 768px;
+        display: flex;
+        flex-direction: column;
+        min-height: 450px;
+    }
+    footer{
+        width: 768px;
+    }
+
+    .footer_links, .footer_panels, .footer_timesButton{
+        display: none;
+    }
+    .dropdown_footer{
+        display: block;
+        max-width: 768px;
+    }
+
+    .dropdown-menu1,
+    .dropdown-menu2 {
+      display: none;
+    }
+    .dropdown-menu1.active,
+    .dropdown-menu2.active {
+      display: block;
+      animation: DropDownAnimation ease 0.4s;
+    }
+    @keyframes DropDownAnimation {
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+
+    .dropdown-heading{
+        z-index: 50;
+        font-size: 24px;
+        color: white;
+        display: block;
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid white;
+        height: 40px;
+        width: 718px;
+
+        display: flex;
+    }
+    .dropdown_link{
+        text-decoration: none;
+        font-size: 22px;
+        color: #FFA8AD;
+    }
+    .dropdown-menu1 li{
+        background-color: white;
+        width: 768px;
+        height: 40px;
+
+        line-height: 40px;
+        padding-top: 5px;
+        margin-left: -40px;
+
+        font-weight: 600;
+        font-family: firaCode;
+        border: 1px solid #FFA8AD;
+        list-style-type: none;
+        text-align: center;
+    }
+    .dropdown-menu1 li:hover a{
+        color: white;
+    }
+    .dropdown-menu1 li:hover{
+        background-color: #FFA8AD;
+    }
+    
+    .dropdown-menu2 li:hover{
+        background-color: #FFA8AD;
+        color: white;
+    }
+       
+    .dropdown-menu2 li{
+        background-color: white;
+        width: 768px;
+        height: 40px;
+
+      
+        line-height: 40px;
+        padding-top: 5px;
+        margin-left: -40px;
+       
+        font-size: 22px;
+        color: #FFA8AD;;
+        font-family: firaCode;
+        border: 1px solid #FFA8AD;;
+        list-style-type: none;
+        text-align: center;
+    }
+    .footer_logo{
+        text-align: center;
+        position: relative;
+        left: -50px;
+        top: 250px;
+    }
+    .footer_logo p{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .footer_logo #logo{
+        display: none;
+    }
+    #toothUp{
+        position: relative;
+        width: 205px;
+        height: 185px;
+
+        margin-top: 0px;
+        margin-left: 0px;
+        top: -125px;
+    }
+    .footer_social{
+        width: 120px;
+        height: 77px;
+    }
+    .footer_drop{
+        position: relative;
+    }
+    .strekaDropdown{
+        height: 32px;
+        width: 32px;
+        background-size: cover;
+        background-image: url(/images/strelkaDropDown.png);
+    }
+    #strekaDropdown1{
+        margin-left: 560px;
+    }
+    #strekaDropdown2{
+        margin-left: 546px;
+    }
+    .footer_socials{
+        width: 200px;
+        position: relative;
+        left: 190px;
+        top: -5px;
+    }
+    #name768{
+        position: relative;
+        left: -170px;
+        top: -340px;
+        width: 350px;
+        height: 35px;
+        background-image: url(/images/NameClinicFooter768.svg);
+        background-size: cover;
+        display: block;
+    }
+
+    .dropdown{
+        width: 200px;
+    }
+
+    #comments .container_comments .swiper-container {
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+
+    .error-message{
+        font-size: 14px;
+    }
+
+    .comments_block_behind h3{
+        font-size: 28px;
+        margin-top: 5px;
+    }
+    .comments_block_behind p{
+        font-size: 23px;
+        margin-top: 10px;
+    }
+    .CommentsformBack{
+        left: 290px;
+        top:245px;
+    }
+}

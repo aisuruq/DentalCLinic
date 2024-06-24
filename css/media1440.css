@@ -1,0 +1,318 @@
+@media (max-width: 1440px) {
+    header{
+        max-width: 1440px;
+    }
+    .header_menu{
+        font-size: 20px;
+        margin-left: 40px;
+        width: 1380px;
+        display: grid;
+        grid-template: 1fr / 200px 50px 2.5fr 45px 1fr 45px 1fr;
+    }
+    .login_header{
+        margin-left: -10px;
+        width: 150px;
+    }
+    .main_menu .dropdown{
+       margin-top: -9px;
+    }
+
+    #timer{
+        margin-top: 25px;
+    }
+    .main_page_text h1{
+        font-size: 42px;
+    }
+    .main_page_text p{
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+    .timer_block span{
+        font-size: 32px;
+    }
+    .main_page_text .timer_block p{
+        font-size: 28px;
+    }
+    #main_page{
+        width: 1440px;
+    }
+    .mainPage{
+        border-radius: 0px;
+        width: 1440px;
+        height: 600px;
+        margin: 0 auto;
+    }
+    .main_page_text{
+        margin-top: -170px;
+        margin-left: 70px;
+        
+        width: 675px;
+        height: 400px;
+    }
+    .main_page_button{
+        font-size: 28px;
+    }
+    #signUp{
+        width: 300px;
+        height: 70px;
+    }
+    #review{
+        width: 300px;
+        height: 70px;
+    }
+    #tooth{
+        width: 95px;
+        height: 97px;
+    
+        top: 215px;
+        left: -738px;
+    }
+
+
+
+    #clinic_services{
+        width: 1440px;
+    }
+    .clinicSevices{
+        margin-left: 70px;
+        width: 1340px;
+        height: 400px;
+    }
+    .clinic_services_blocks{
+        width: 1300px;
+    }
+    .clinic_services_block{
+        width: 305px;
+    }
+    .clinic_services--hover p{
+        font-size: 20px;
+    }
+    .clinic_services--hover h4{
+        font-size: 26px;
+    }
+    #aboutUs{
+       width: 1440px;
+       height: 1050px;
+    }
+    .about__us{
+        width: 1440px;
+        height: 975px;
+    }
+    .about__us h2{
+        margin-left: 70px;
+    }
+    #toothAppearAboutUs{
+        top: -940px;
+    }
+    .text_aboutUs{
+        width: 1300px;
+        margin-bottom: 60px;
+        font-size: 24px;
+    }
+    .content_img{
+        width: 1300px;
+
+        grid-template: 200px 20px 200px / 280px 20px 360px 20px 620px;
+        grid-template-areas: 
+        "dentalroom  familyclinic girlabout"
+        "dentalroom  decoration girlabout";
+    }
+    #DentalRoom{
+        width: 280px;
+        height: 420px;
+    }
+    #familyClinic{
+        width: 360px;
+    }
+    #Decoration{
+        width: 360px;
+        background-size: cover;
+    }
+    #mainPictureAbout{
+        width: 620px;
+        height: 420px;
+    }
+
+    .container_quality{
+        width: 1300px;
+    }
+    .quality{
+        width: 420px;
+       
+    }
+    .quality p{
+        font-size: 30px;
+    }
+
+
+    #doctors{
+        width: 1440px;
+    }
+    .doctors_mainBlock{
+        width: 1440px;
+    }
+    .doctors_mainBlock h2{
+        margin-left: 70px; 
+    }
+    .container_doctors{
+        margin-left: 30px;
+        width: 1360px;
+    }
+    .doctors_block_text h3{
+        width: 100%;
+        font-size: 21px;
+        height: 30px;
+        padding-top: 0px;
+    }
+    .content_doctors_block{
+        width: 100%;
+    }
+    .content_doctors_block .photo{
+        width: 100%;
+    }
+    .DoctorstextBackground{
+        width: 100%;
+    }
+    .DoctorsformPodrobnee{
+        top: 515px;
+        left: 230px;
+    }
+    .doctors_block_text--hover{
+        height: 562px;
+    }
+    .doctors_block_text--hover p{
+        font-size: 22px;
+    }
+    #doctors .slide-container{
+        max-width: 1300px;
+    }
+    .doctors_block_text p{
+        font-size: 20px;
+        padding-right: 5px;
+    }
+    #doctorArrowLeft{
+        width: 45px;
+        height: 40px;
+    }
+    #doctorArrowRight{
+        width: 45px;
+        height: 40px;
+    }
+    #regPhp{
+        width: 300px;
+        height: 70px;
+        
+        font-size: 26px;
+    }
+    #avtorPhp{
+        width: 300px;
+        height: 70px;
+        
+        font-size: 26px;
+    }
+    #form_signup{
+        width: 1440px;
+    }
+    .formSignup{
+        width: 1300px;
+        height: 400px;
+    }
+    .formSignup form{
+        width: 1200px;
+    }
+    .formSignup form input{
+        width: 370px;
+    }
+    #signUp_form{
+        width: 360px;
+    }
+
+    #comments{
+        width: 1440px;
+    }
+    .comments{
+        width: 1440px;
+    }
+    .comments h2{
+        margin-left: 70px;
+    }
+    .container_comments{
+        min-width: 1300px;
+    }
+    .comments_block{
+        width: 640px;
+    }
+    .comments_block_data{
+        top: 20px;
+    }
+    #commentsLike{
+        left: 115px
+    }
+    .comments_block_text p{
+        font-size: 20px;
+    }
+
+    #footer{
+        width: 1440px;
+    }
+    footer{
+        width: 1440px;
+    }
+    .footer_menu{
+        margin-left: 45px;
+    }
+    .social__icon{
+        width: 45px;
+        height: 45px;
+    }
+    .social__icon i{
+        font-size: 24px;
+    }
+    .footer_socials{
+        width: 180px;
+    }
+    .footer_links{
+        font-size: 20px;
+        font-family: manrope;
+    
+        grid-template:  40px 40px/ 120px 100px;
+    }
+    .footer_panels a{
+        margin-right: 30px;
+        font-size: 20px;
+    }
+    .footer_panels {
+        margin-right: -20px;
+    }
+    #telFooter{
+        font-size: 22px;
+    }
+    .footer_timesButton p{
+        margin-left: 5px;
+        font-size: 19px;
+        width: 220px;
+    }
+    #toothUp{
+        margin-top: -40px;
+        margin-left: 50px;
+        width: 140px;
+        height: 120px;
+    }
+    .button_footer{
+        width: 220px;
+        height: 70px;
+        font-size: 24px;
+    }
+    .footer_timesButton{
+        margin-right: 50px;
+    }
+
+    .comments_block_behind p{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .comments_block_data{
+        position: absolute;
+        top: 215px;
+    }
+  }
